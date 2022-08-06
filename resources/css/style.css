@@ -1,11 +1,17 @@
 body {
-    font-size: 16px;
+    font-size: 24px;
     width: 100%;
     background-color: aqua;
 }
+
+/*.nav-text {
+    display: none;
+}
+*/
 a {
     color: black;
     text-decoration: none;
+    
 }
 .bold {
     font-weight: bold;
@@ -17,12 +23,13 @@ a {
     position: fixed;
     top: 0;
     right: 0;
-    font-size: 1.5rem;
+    justify-content: center;
     background-color: white;
     z-index: 1;
 }
 .nav-bar img{
     height: 2rem;
+    width: auto;
 }
 .nav-bar-left{
     width: 100%;
@@ -33,6 +40,12 @@ a {
     width: 100%;
     display: inline-flex;
     justify-content: end;
+}
+
+@media only screen and (min-width: 600px) {
+.nav-bar-right img {
+    display: none;
+}
 }
 
 .logo {
@@ -60,4 +73,9 @@ a {
     align-items: center;
     padding-right: 1.5rem;
 
+}
+@media only screen and (max-width: 600px) {
+    .nav-text {
+        display: none;
+    }
 }

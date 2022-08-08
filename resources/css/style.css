@@ -2,16 +2,23 @@ body {
     font-size: 16px;
     width: 100%;
     background-color: aqua;
+    margin: 0 0;
+    box-sizing: border-box;
 }
 
+div {
+    display: flex;
+}
+/*
 img {
     display: flex;
     height: 32px;
     width: auto;
 }
-
+*/
 nav {
     display: flex;
+    z-index: 1;
 }
 
 .bold {
@@ -23,7 +30,7 @@ nav {
 
 }
 
-.nav-img {
+.nav-bar img {
     display: flex;
     height: 32px;
     width: auto;
@@ -64,10 +71,26 @@ a {
     justify-items: center;
 }
 
+.start {
+    margin: 0 0;
+    position: relative;
+    top: 64px;
+    left:0;
+    background-color: gainsboro;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: gray;
+    color: white;
+    border-color: gray;
+}
+
+/* for laptop */
+
 @media only screen and (min-width: 600px) {
-    li img {
-        display: none;
-    }
     .nav-bar {
         height: 64px;
         display: flex;
@@ -84,9 +107,6 @@ a {
         margin-right: auto;
         align-items: center;
     }
-    #phone-img {
-        display: none;
-    }
     .nav-img {
         margin-left: 24px;
     }
@@ -102,7 +122,29 @@ a {
     #login {
         margin-right: 24px;
     }
+    .start img {
+        width: 60%;
+        padding: 32px 24px;
+    }
+    #phone-img {
+        display: none;
+    }
+    li img {
+        display: none;
+    }
+    .a {
+        display:  none;
+    }
+    .start-text {
+        width: 40%;
+        height:auto;
+        align-items: center;
+        display: block;
+        padding-right: 72px;
+    }
 }
+
+/* for phone*/
 
 @media only screen and (max-width: 600px) {
     .nav-bar {
@@ -137,5 +179,28 @@ a {
         height: 64;
         width: 100%;
         justify-content: space-around;
+    }
+    .start img {
+        width: 100%;
+        padding-bottom: 32px;
+    }
+    .start {
+        display: block;
+        padding: 0 16px;
+    }
+    h1 {
+        padding-bottom: 32px;
+    }
+    h3 {
+        padding-bottom: 24px;
+    }
+    button {
+        margin-bottom: 32px;
+    }
+    .start-text {
+        width: 100%;
+        height:auto;
+        display: block;
+        padding:
     }
 }

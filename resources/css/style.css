@@ -4,24 +4,19 @@ body {
     background-color: aqua;
 }
 
-.nav-bar {
-    height: 64px;
+img {
     display: flex;
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    justify-content: flex-end;
-    align-items: center;
+    height: 32px;
+    width: auto;
 }
 
-.logo {
+nav {
     display: flex;
-    margin-right: auto;
-    align-items: center;
 }
 
+.bold {
+    font-weight: bold;
+}
 
 .menu {
     display: flex;
@@ -32,7 +27,6 @@ body {
     display: flex;
     height: 32px;
     width: auto;
-    margin-left: 24px;
 }
 ul {
     display: flex;
@@ -50,26 +44,98 @@ a {
     display: flex;
     align-items: center;
     justify-items: center;
-    margin-right: 24px;  
 }
 
 #online {
     display: flex;
     align-items: center;
-    justify-items: center;
-    margin-right: 16px;    
+    justify-items: center; 
 }
 
 #for-companies {
     display: flex;
     align-items: center;
     justify-items: center;
-    margin-right: 16px;    
 }
 
 #login {
     display: flex;
     align-items: center;
     justify-items: center;
-    margin-right: 24px;
+}
+
+@media only screen and (min-width: 600px) {
+    li img {
+        display: none;
+    }
+    .nav-bar {
+        height: 64px;
+        display: flex;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        margin-right: auto;
+        align-items: center;
+    }
+    #phone-img {
+        display: none;
+    }
+    .nav-img {
+        margin-left: 24px;
+    }
+    #on-campus {
+        margin-right: 24px;  
+    }
+    #online {
+        margin-right: 16px;   
+    }
+    #for-companies {
+        margin-right: 16px;    
+    }    
+    #login {
+        margin-right: 24px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        height: 64px;
+        display: flex;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        justify-content: space-around;
+        align-items: center;
+    }    
+    body {
+        font-size: 16px;
+        width: 100%;
+        background-color: red;
+    }    
+    .nav-text {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    #phone-img {
+        padding: 0;
+        display: flex;
+        margin: 0 0;
+        height: 64;
+        width: 100%;
+        justify-content: space-around;
+    }
 }

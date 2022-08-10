@@ -398,4 +398,38 @@ button {
     .hor {
         border: 0 none;
     }
+    .learning {
+        padding: 32px 16px;
+        background-color: white;
+        border: 1px dotted;
+    }
+    .apple {
+        background-color: gainsboro;
+    }
+    .text p{
+        display: none;
+    }
+    .card-items {
+        width: 100%;
+        text-align: start;
+        font-size: large;
+    }
+    .image-1 {
+        display: none;
+    }
+    .image-2 {
+        display: none;
+    }
+    .image-3 {
+        display: none;
+    }
+    .image-4 {
+        display: none;
+    }
+    .image-5 {
+        display: none;
+    }
+    .image-6 {
+        display: none;
+    }
 }

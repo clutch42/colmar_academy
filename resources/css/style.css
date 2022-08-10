@@ -166,7 +166,108 @@ button {
     box-sizing: border-box;
     align-items: center;
 }
-
+.vertical {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+}
+.horizontal {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+}
+.learning {
+    position: relative;
+    top: 64px;
+    background-color: gainsboro;
+    padding: 32px 72px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.learning h2 {
+    margin: 0 0 32px 0;
+}
+.cards {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 32px;
+    justify-content: space-between;
+}
+.card-items {
+    width: 31%;
+}
+.apple {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.image-1 {
+    display: flex;
+    background-image: url("../images/course-software.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 25vh;
+}
+.text {
+    width: 100%;
+    height: auto;
+    padding: 16px 16px 24px 16px;
+}
+.text p {
+    padding-top: 8px;
+}
+.image-2 {
+    display: flex;
+    background-image: url("../images/course-computer-art.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 25vh;
+}
+.image-3 {
+    display: flex;
+    background-image: url("../images/course-design.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 25vh;
+}
+.image-4 {
+    display: flex;
+    background-image: url("../images/course-data.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 25vh;
+}
+.image-5 {
+    display: flex;
+    background-image: url("../images/course-business.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 25vh;
+}
+.image-6 {
+    display: flex;
+    background-image: url("../images/course-marketing.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 25vh;
+}
 
 /* for laptop */
 
@@ -290,5 +391,11 @@ button {
         height:auto;
         display: block;
         padding:
+    }
+    .orient-left {
+        display: none;
+    }
+    .hor {
+        border: 0 none;
     }
 }

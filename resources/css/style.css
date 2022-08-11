@@ -274,8 +274,6 @@ button {
     padding: 32px 24px;
     background-color: white;
 }
-.thesis-content {
-}
 .thesis-left-side {
     width: 60%;
     padding-right: 24px;
@@ -322,6 +320,20 @@ button {
 .gray {
     background-color: gainsboro;
 }
+.footer {
+    position: relative;
+    top: 64px;
+    border-top: 1px dotted;
+    padding: 16px 24px;
+    background-color: white;
+}
+.list2 {
+    justify-content: space-between;
+}
+#terms {
+    padding-right: 16px;
+}
+
 
 /* for laptop */
 
@@ -386,6 +398,7 @@ button {
         width:40%;
     }
 }
+
 
 /* for phone*/
 
@@ -485,5 +498,18 @@ button {
     }
     .image-6 {
         display: none;
+    }
+    .thesis-right-side {
+        display: none;
+    }
+    .thesis-left-side {
+        width: 100%;
+        padding: 0;
+    }
+    .thesis-left-side h4,p {
+        display: none;
+    }
+    .thesis {
+        padding: 32px 0 24px 0;
     }
 }

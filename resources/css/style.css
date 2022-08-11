@@ -512,4 +512,7 @@ button {
     .thesis {
         padding: 32px 0 24px 0;
     }
+    #copyright {
+        display: initial;
+    }
 }

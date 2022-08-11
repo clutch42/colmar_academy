@@ -515,4 +515,32 @@ button {
     #copyright {
         display: initial;
     }
+    .hor {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;    
+    }
+    .orient-right {
+        width: 100%;
+    }
+    .orient-text {
+        width: 100%
+        height:auto;
+    }
+    .orient-text p {
+        display:contents;
+    }
+    .orient-1 {
+        background-image: url("../images/information-orientation-mobile.jpg");
+        width: 100%;
+    }
+    .orient-2 {
+        background-image: url("../images/information-campus-mobile.jpg");
+        width: 100%;
+    }
+    .orient-3 {
+        background-image: url("../images/information-guest-lecture-mobile.jpg");
+        width: 100%;
+    }
 }
